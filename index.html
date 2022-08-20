@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="colored">
+        <div id="cardFront">
+          <div id="cardlogo"></div>
+          <h1 id="cardnum"></h1>
+
+          <h5 id="name"></h5>
+          <h4 id="date">
+            <p id="M"></p>
+            <p id="Y"></p>
+          </h4>
+        </div>
+        <div id="cardBack">
+          <h4 id="backnum"></h4>
+        </div>
+      </div>
+      <div id="whited">
+        <form id="FormDetails">
+          <div class="fullW">
+            <label>CARDHOLDER NAME</label>
+            <input
+              id="Cardholder_NameInput"
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </div>
+          <span id="nameRequird"></span>
+          <div class="fullW">
+            <label>CARD NUMBER</label>
+            <input
+              id="Card_NumberInput"
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+          </div>
+          <span id="numberRequird"></span>
+          <div id="numContainer" class="fullW">
+            <div class="halfW l">
+              <label class="numlabel">EXP. DATE (MM/YY)</label>
+              <div id="LInputs">
+                <input type="text" name="" id="MonthInput" placeholder="MM" />
+                <input type="text" name="" id="yearInput" placeholder="YY" />
+              </div>
+            </div>
+
+            <div class="halfW r">
+              <label class="numlabel">CVC </label>
+              <input
+                type="text"
+                name=""
+                id="cvcInput"
+                placeholder=" e.g. 123"
+              />
+            </div>
+          </div>
+          <span id="MYRequird"></span>
+          <span id="cvcRequird"></span>
+          <div class="fullW">
+            <button type="button" id="confirmBut">Confirm</button>
+          </div>
+        </form>
+        <div id="completeCard">
+          <img id="correctPic" src="./images/icon-complete.svg" alt="" />
+          <h1 id="thnx">THANK YOU!</h1>
+          <p id="PComplete">We've added your card details</p>
+          <button type="button" id="continueBut">Continue</button>
+        </div>
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>

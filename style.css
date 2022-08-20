@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;1,100&family=Inter:wght@100&family=Lobster&family=Luckiest+Guy&family=Montserrat:wght@700&family=PT+Sans&family=Patrick+Hand&family=Quintessential&family=Shalimar&family=Space+Grotesk:wght@500&display=swap");
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 99.5%;
+  height: 900px;
+  display: flex;
+  background-color: #edede9;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+.container {
+  width: 94%;
+  height: 94%;
+  margin-top: 20px;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  filter: drop-shadow(0 4px 4px rgba(0.25, 0.25, 0.25, 0.25));
+}
+#colored {
+  width: 30%;
+  height: 100%;
+  background-image: url("./images/bg-main-desktop.png");
+}
+#whited {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#cardFront {
+  position: absolute;
+  width: 31.5%;
+  height: 28.9%;
+  top: 20%;
+  right: 60%;
+  background-image: url("./images/bg-card-front.png");
+  border-radius: 5px;
+}
+#cardBack {
+  position: absolute;
+  width: 31.4%;
+  height: 28.9%;
+  top: 54%;
+  right: 54%;
+  border-radius: 5px;
+  background-image: url("./images/bg-card-back.png");
+}
+#cardlogo {
+  position: relative;
+  top: 12%;
+  left: 7%;
+  width: 18.75%;
+  height: 19.2%;
+  background-image: url("./images/card-logo.svg");
+}
+#cardnum {
+  color: white;
+  position: relative;
+  top: 26%;
+  text-align: center;
+  letter-spacing: 2px;
+  transform: scale(1, 0.7);
+}
+/* #Cont {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 14%;
+  left: 0.5%;
+} */
+#name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  top: 25%;
+  left: 8%;
+  letter-spacing: 2px;
+}
+#date {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transform: scale(1, 0.7);
+  top: -2%;
+  left: 82%;
+  letter-spacing: 2px;
+}
+#backnum {
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transform: scale(1, 0.7);
+  left: 79%;
+  top: 35%;
+  letter-spacing: 2px;
+}
+form {
+  margin-top: 13%;
+  width: 36%;
+  height: 48%;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(278, 68%, 11%);
+}
+.fullW {
+  width: 100%;
+  height: 22%;
+}
+.fullW input {
+  width: 95%;
+}
+#numContainer {
+  display: flex;
+  flex-direction: row;
+}
+.halfW {
+  width: 50%;
+}
+.l input {
+  width: 37%;
+  height: 77%;
+  padding-left: 6%;
+}
+#LInputs {
+  margin-top: 4%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+#yearInput {
+  margin-left: 6%;
+}
+.r input {
+  margin-top: 7%;
+  padding-left: 6%;
+}
+label {
+  height: 60%;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 600;
+}
+#label {
+  height: 20%;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  /* border: 2px solid darkblue; */
+  margin-top: 7%;
+}
+input {
+  height: 40%;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 3%, 87%);
+  margin-top: 3%;
+  padding-left: 4%;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(278, 68%, 11%);
+  font-size: 16px;
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid #7209b7;
+}
+#confirmBut,
+#continueBut {
+  margin-top: 3%;
+  width: 100%;
+  height: 50%;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: hsl(278, 68%, 11%);
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
+#nameRequird,
+#numberRequird {
+  position: relative;
+  top: -5%;
+  color: #d62828;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+#MYRequird {
+  position: relative;
+  top: -4%;
+  color: #d62828;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+#cvcRequird {
+  position: relative;
+  top: -4%;
+  left: 27%;
+  color: #d62828;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+.error {
+  border: 1px solid #d62828;
+}
+#completeCard {
+  width: 36%;
+  height: 48%;
+  display: none;
+  text-align: center;
+  margin-top: 15%;
+}
+#correctPic {
+}
+#continueBut {
+  width: 100%;
+  height: 13%;
+  margin-top: 10%;
+}
+#thnx,
+#PComplete {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+}
+#thnx {
+  letter-spacing: 2px;
+  color: hsl(278, 68%, 11%);
+  font-size: 27px;
+  margin-top: 6%;
+}
+#PComplete {
+  letter-spacing: 1px;
+  color: hsl(279, 6%, 55%);
+  font-size: 14px;
+}
+/* ////////////////////////////////////////////////// */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  color: hsl(279, 6%, 55%);
+  padding-left: 1%;
+  letter-spacing: 1px;
+}
