@@ -26,7 +26,10 @@ body {
 #colored {
   width: 30%;
   height: 100%;
+  display: flex;
   background-image: url("./images/bg-main-desktop.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 #whited {
   width: 70%;
@@ -43,6 +46,8 @@ body {
   top: 20%;
   right: 60%;
   background-image: url("./images/bg-card-front.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   border-radius: 5px;
 }
 #cardBack {
@@ -53,6 +58,8 @@ body {
   right: 54%;
   border-radius: 5px;
   background-image: url("./images/bg-card-back.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 #cardlogo {
   position: relative;
@@ -61,22 +68,19 @@ body {
   width: 18.75%;
   height: 19.2%;
   background-image: url("./images/card-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #cardnum {
   color: white;
   position: relative;
   top: 26%;
-  text-align: center;
+  left: 8%;
   letter-spacing: 2px;
   transform: scale(1, 0.7);
+  font-size: 2.3vw;
 }
-/* #Cont {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 14%;
-  left: 0.5%;
-} */
+
 #name {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
@@ -85,6 +89,7 @@ body {
   top: 25%;
   left: 8%;
   letter-spacing: 2px;
+  font-size: 1vw;
 }
 #date {
   display: flex;
@@ -94,8 +99,9 @@ body {
   position: relative;
   transform: scale(1, 0.7);
   top: -2%;
-  left: 82%;
+  left: 80%;
   letter-spacing: 2px;
+  font-size: 1.2vw;
 }
 #backnum {
   font-weight: 600;
@@ -105,9 +111,12 @@ body {
   left: 79%;
   top: 35%;
   letter-spacing: 2px;
+  font-size: 1.1vw;
+  flex-shrink: -1;
 }
 form {
   margin-top: 13%;
+  margin-left: 8%;
   width: 36%;
   height: 48%;
   font-weight: 700;
@@ -126,12 +135,16 @@ form {
   display: flex;
   flex-direction: row;
 }
-.halfW {
+.l {
   width: 50%;
+}
+.r {
+  width: 44%;
+  margin-left: 4%;
 }
 .l input {
   width: 37%;
-  height: 77%;
+  height: 77.5%;
   padding-left: 6%;
 }
 #LInputs {
@@ -151,16 +164,17 @@ label {
   height: 60%;
   letter-spacing: 2px;
   font-size: 11px;
+  font-size: 0.8vw;
   font-weight: 600;
 }
-#label {
+/* #label {
   height: 20%;
   letter-spacing: 2px;
   font-size: 11px;
   font-weight: 600;
-  /* border: 2px solid darkblue; */
+  border: 2px solid darkblue;
   margin-top: 7%;
-}
+} */
 input {
   height: 40%;
   border-radius: 8px;
@@ -218,13 +232,15 @@ input:focus {
   border: 1px solid #d62828;
 }
 #completeCard {
-  width: 36%;
+  width: 40%;
   height: 48%;
   display: none;
+  margin-left: 4%;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 18%;
 }
 #correctPic {
+  width: 20%;
 }
 #continueBut {
   width: 100%;
@@ -252,7 +268,260 @@ input:focus {
   /* Chrome/Opera/Safari */
   font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
-  color: hsl(279, 6%, 55%);
+  color: #d1d1d1;
   padding-left: 1%;
   letter-spacing: 1px;
+  font-size: 1vw;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1400px) {
+  #cardFront {
+    top: 21%;
+    height: 27%;
+  }
+  #cardBack {
+    height: 27%;
+  }
+  form {
+    margin-top: 12%;
+    width: 45%;
+  }
+  #cardnum {
+    font-size: 2.3vw;
+  }
+  #date {
+    font-size: 1.4vw;
+    left: 76%;
+  }
+  #backnum {
+    font-size: 1.4vw;
+  }
+  #completeCard {
+    width: 44%;
+    margin-top: 19%;
+    height: 46%;
+    margin-left: 8%;
+  }
+  #correctPic {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 1231px) {
+  #cardFront {
+    top: 23%;
+    height: 24%;
+  }
+  #cardBack {
+    height: 24%;
+  }
+
+  #cardnum {
+    font-size: 2.19vw;
+  }
+  #date {
+    font-size: 1.5vw;
+    left: 74%;
+  }
+  #backnum {
+    font-size: 1.3vw;
+  }
+  #completeCard {
+    width: 47%;
+    margin-top: 17%;
+    margin-left: 8%;
+    height: 45%;
+  }
+  #correctPic {
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #cardFront {
+    top: 28%;
+    height: 20%;
+  }
+  #cardBack {
+    height: 20%;
+  }
+  form {
+    margin-top: 12%;
+    height: 38%;
+  }
+  #completeCard {
+    width: 48%;
+    margin-top: 17%;
+    margin-left: 11%;
+    height: 40%;
+  }
+  #correctPic {
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 837px) {
+  #cardFront {
+    top: 30%;
+    height: 18%;
+  }
+  #cardBack {
+    height: 18%;
+  }
+  form {
+    height: 36%;
+  }
+  #completeCard {
+    width: 48%;
+    margin-top: 18%;
+    margin-left: 13%;
+    height: 36%;
+  }
+  #correctPic {
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 660px) {
+  #cardFront {
+    width: 35.5%;
+    top: 32%;
+    height: 16%;
+  }
+  #cardBack {
+    width: 35.5%;
+    height: 16%;
+  }
+  form {
+    height: 32%;
+  }
+  #completeCard {
+    width: 48%;
+    margin-top: 18%;
+    margin-left: 13%;
+    height: 36%;
+  }
+  #correctPic {
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .container {
+    flex-direction: column;
+  }
+  #colored {
+    width: 100%;
+    height: 35%;
+    display: flex;
+  }
+  #whited {
+    width: 100%;
+    height: 65%;
+  }
+  #cardFront {
+    width: 77%;
+    top: 18%;
+    right: 18%;
+    height: 23%;
+    z-index: 1;
+  }
+  #cardBack {
+    width: 77%;
+    height: 23%;
+    top: 5%;
+    right: 3%;
+    z-index: 0;
+  }
+  #cardlogo {
+    left: 8%;
+  }
+  #cardnum {
+    top: 20%;
+    font-size: 5.5vw;
+  }
+  #name {
+    top: 18%;
+    font-size: 1.6vw;
+  }
+  #date {
+    font-size: 2.4vw;
+    left: 83%;
+    top: -7%;
+  }
+  #backnum {
+    font-size: 2.4vw;
+    left: 80%;
+  }
+  form {
+    margin-top: 14%;
+    width: 90%;
+    height: 75%;
+    margin-left: 0;
+  }
+  label {
+    font-size: 2vw;
+  }
+  #confirmBut,
+  #continueBut {
+    height: 60%;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 2vw;
+  }
+  /* 
+
+  #completeCard {
+    width: 44%;
+    margin-top: 19%;
+    height: 46%;
+    margin-left: 8%;
+  }
+  #correctPic {
+    width: 18%;
+  } */
+}
+@media screen and (max-width: 570px) {
+  #colored {
+    width: 100%;
+    height: 30%;
+    display: flex;
+  }
+  #whited {
+    width: 100%;
+    height: 70%;
+  }
+  #cardFront {
+    width: 77%;
+    top: 15.7%;
+    right: 18%;
+    height: 19%;
+    z-index: 1;
+  }
+  #cardBack {
+    width: 77%;
+    height: 19%;
+    top: 5%;
+    right: 3%;
+    z-index: 0;
+  }
+  #cardnum {
+    top: 23%;
+    font-size: 5.5vw;
+  }
+  #name {
+    top: 26%;
+    font-size: 2.1vw;
+  }
+  #date {
+    font-size: 2.6vw;
+    left: 83%;
+    top: 3%;
+  }
+  #backnum {
+    font-size: 2.9vw;
+    left: 80%;
+  }
+  label {
+    font-size: 3vw;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 4vw;
+  }
 }
