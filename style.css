@@ -393,13 +393,24 @@ input:focus {
     height: 32%;
   }
   #completeCard {
-    width: 48%;
-    margin-top: 18%;
-    margin-left: 13%;
-    height: 36%;
+    width: 100%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    height: 60%;
   }
   #correctPic {
-    width: 16.5%;
+    width: 20.5%;
+  }
+  #continueBut {
+    height: 18% !important;
+    margin-top: 3%;
+    font-size: 1rem;
+  }
+  #thnx {
+    font-size: 2rem;
+  }
+  #PComplete {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 610px) {
@@ -523,5 +534,24 @@ input:focus {
   }
   ::-webkit-input-placeholder {
     font-size: 4vw;
+  }
+  #completeCard {
+    width: 120%;
+
+    height: 70%;
+  }
+  #correctPic {
+    width: 25.5%;
+  }
+  #continueBut {
+    height: 13% !important;
+    margin-top: 8%;
+    font-size: 0.8rem;
+  }
+  #thnx {
+    font-size: 1.8rem;
+  }
+  #PComplete {
+    font-size: 0.75rem;
   }
 }
